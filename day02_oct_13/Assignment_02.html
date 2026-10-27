@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h3 class=" fw-bold text-center text-primary">Billing Information</h3>
+    <form method="POST" class="border border-3 rounded-3 p-3  m-3">
+        <div class="m-3">
+            <label for="First Name">First Name: </label>
+            <input id="First Name" placeholder="Enter your first name" type="text" required>
+        </div>
+        <div class="m-3">
+            <label for="Last Name">Last Name: </label>
+            <input id="Last Name" placeholder="Enter your last name" type="text" required>
+        </div>
+        <div class="m-3">
+            <label>Gender: </label>
+            <input id="Male" type="radio" name="gender" value="Male"> <label for="Male">Male </label>
+            <input id="Female" type="radio" name="gender" value="Female"> <label for="Female">Female </label>
+        </div>
+        <div class="m-3">
+           <label>Languages: </label>
+            <input type="checkbox" name="Languages" value="English"> English
+            <input type="checkbox" name="Languages" value="Telugu"> Telugu
+            <input type="checkbox" name="Languages" value="French"> Hindi
+        </div>
+        <div class="m-3">
+            <label for="Email">Emaid: </label>
+            <input type="email" name="email" required placeholder="...@gmail.com">
+        </div>
+        <div class="m-3">
+            <label for="Address">Address: </label>
+            <textarea name="Address" id="Address"></textarea>
+        </div>
+        <div class="m-3">
+        <label for="State"> State: </label>
+        <select name="State" placeholder="Choose your State">
+            <option value="Kansas">Kansas</option>
+            <option value="Texas">Texas</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Missouri">Missouri</option>
+            <option value="California">California</option>
+        </select>
+        </div>
+        <div class="m-3">
+            <label for="Zipcode"> Zip: </label>
+            <input type="number" maxlength="6" minlength="6" required>
+        </div>
+        <div class="m-3">
+            <label for="Credit Card"> Credit card Type: </label>
+            <select name="Credit Card" placeholder="Choose your payment card type">
+            <option value="Rupay">Rupay</option>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+        </select>
+        </div>
+        <button class="btn-primary">Submit</button>
+    </form>
+    
+</body>
+</html>
